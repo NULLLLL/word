@@ -18,6 +18,7 @@ public class MainActor extends UntypedActor {
 
 	@Override
 	public void preStart() throws Exception {
+		
 		MainActor.startTime = System.currentTimeMillis();
 		data = Word.re();
 		int size = data.length;
