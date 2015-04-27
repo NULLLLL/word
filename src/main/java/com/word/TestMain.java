@@ -18,6 +18,7 @@ public class TestMain {
 				return;
 			/*int availableProcessors = Runtime.getRuntime().availableProcessors();
 			System.err.println(availableProcessors);*/
+
 			final ActorRef mainActor = ActorSystem.create().actorOf(Props.create(MainActor.class));
 			mainActor.tell("start", mainActor);
 		} catch (Exception e) {
